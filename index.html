@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Redirecionamento</title>
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
     <style>
-        html, body, iframe {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF;
             border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://www.newbraz.com.br/produtos/batatas" frameborder="0" allowfullscreen></iframe>
+    <h1>Bem-vindo ao nosso site</h1>
+    <a href="contato.html" class="btn">Contato</a>
+    <a href="https://www.newbraz.com.br/produtos/batatas" class="btn" target="_blank">Produtos</a>
 </body>
 </html>
