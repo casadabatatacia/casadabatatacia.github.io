@@ -2,40 +2,111 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Bem-vindo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbraz Foods - Distribuidora de Batatas Congeladas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Bem-vindo ao nosso site</h1>
-    <a href="contato.html" class="btn">Contato</a>
-    <a href="https://www.newbraz.com.br/produtos/batatas" class="btn" target="_blank">Produtos</a>
+    <header>
+        <img src="img/logo-newbraz.png" alt="Newbraz Foods" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos" class="produtos-destaque">
+            <h2>Nossos Produtos</h2>
+            <div class="grid-produtos">
+                <!-- Produto 1 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-PURÊ-DE-BATATAS-1,01-KG.png" alt="Purê de Batatas">
+                    <h3>Purê de Batatas</h3>
+                    <p>1,01 kg</p>
+                    <p>Purê de batatas prático e delicioso, pronto para preparo rápido.</p>
+                    <a href="produtos/pure-batatas.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-RÚSTICA-CONGELADA-1,5-KG.png" alt="Batata Rústica">
+                    <h3>Batata Rústica</h3>
+                    <p>1,5 kg</p>
+                    <p>Batatas fritas congeladas pré-cozidas com cobertura, no estilo rústico.</p>
+                    <a href="produtos/batata-rustica.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-CRINKLE-1,5-KG.png" alt="Batata Crinkle">
+                    <h3>Batata Crinkle</h3>
+                    <p>1,5 kg</p>
+                    <p>Batatas pré-fritas congeladas no formato ondulado, levemente temperadas.</p>
+                    <a href="produtos/batata-crinkle.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-TRADICIONAL-10MM-2-KG.png" alt="Batata Tradicional 10mm">
+                    <h3>Batata Tradicional 10mm</h3>
+                    <p>2 kg</p>
+                    <p>Batatas pré-fritas congeladas em corte tradicional (10mm).</p>
+                    <a href="produtos/batata-tradicional.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-CANO-CONGELADA-1,5-KG.png" alt="Batata Canoa">
+                    <h3>Batata Canoa</h3>
+                    <p>1,5 kg</p>
+                    <p>Batatas fritas congeladas pré-fritas com cobertura, no formato canoa.</p>
+                    <a href="produtos/batata-canoa.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-CORTE-FINO-2-KG.png" alt="Batata Corte Fino">
+                    <h3>Batata Corte Fino</h3>
+                    <p>2 kg</p>
+                    <p>Batatas pré-fritas congeladas em corte fino, levemente temperadas.</p>
+                    <a href="produtos/batata-fino.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 7 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-CONGELADA-6MM-1,5-KG.png" alt="Batata 6mm">
+                    <h3>Batata 6mm</h3>
+                    <p>1,5 kg</p>
+                    <p>Batatas pré-fritas congeladas em corte fino (6mm), com cobertura especial.</p>
+                    <a href="produtos/batata-6mm.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 8 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-BATATA-CONGELADA-9MM-1,5-KG.png" alt="Batata 9mm">
+                    <h3>Batata 9mm</h3>
+                    <p>1,5 kg</p>
+                    <p>Batatas pré-fritas congeladas em corte tradicional (9mm).</p>
+                    <a href="produtos/batata-9mm.html" class="btn-lermais">Ler mais</a>
+                </div>
+
+                <!-- Produto 9 -->
+                <div class="card-produto">
+                    <img src="img/NEWBRAZ-ANEIS-DE-CEBOLA-1,1-KG.png" alt="Anéis de Cebola">
+                    <h3>Anéis de Cebola</h3>
+                    <p>1,1 kg</p>
+                    <p>Aros de cebola empanados, pré-fritos e congelados.</p>
+                    <a href="produtos/aneis-de-cebola.html" class="btn-lermais">Ler mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Casa da Batata & CIA. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
