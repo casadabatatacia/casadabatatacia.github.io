@@ -69,7 +69,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Produtos - ÁREA COM CORREÇÃO PARA AS IMAGENS */
+/* Produtos */
 .produtos-destaque {
     padding: 2rem;
     max-width: 1200px;
@@ -104,7 +104,6 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* CONTAINER DA IMAGEM - NOVO */
 .card-imagem-container {
     height: 200px;
     display: flex;
@@ -114,7 +113,6 @@ nav ul li a:hover {
     background: #f8f8f8;
 }
 
-/* IMAGEM - CORRIGIDA */
 .card-produto img {
     max-width: 100%;
     max-height: 100%;
@@ -175,7 +173,7 @@ nav ul li a:hover {
     width: 400px;
     height: auto;
     border-radius: 4px;
-    object-fit: contain; /* Alterado de 'cover' para 'contain' */
+    object-fit: contain;
 }
 
 .info-produto {
@@ -307,37 +305,69 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0.2rem 0.5rem;
+        max-height: 60px;
+        overflow: hidden;
     }
-    
+
+    .logo {
+        height: 28px;
+        max-height: 28px;
+    }
+
     nav ul {
-        margin-top: 1rem;
+        margin-top: 0.2rem;
     }
-    
-    .produto-detalhes, .contato-info {
+
+    .produto-detalhes,
+    .contato-info {
         flex-direction: column;
     }
-    
+
     .produto-detalhes img {
         width: 100%;
     }
-    
+
     .banner h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 0.1rem 0.3rem;
+        max-height: 55px;
+        overflow: hidden;
+    }
+
+    .logo {
+        height: 24px;
+        max-height: 24px;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
+        margin-top: 0.2rem;
     }
-    
+
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.2rem 0;
     }
-    
+
     .grid-produtos {
         grid-template-columns: 1fr;
+    }
+
+    .banner {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .banner h1 {
+        font-size: 1.3rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
     }
 }
